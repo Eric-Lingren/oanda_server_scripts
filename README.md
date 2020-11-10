@@ -69,14 +69,18 @@ Step 4 is creating and configuring the robots
 \
 2.4 - Type ```yes``` and press enter if you are asked to allow finger printing     
 \
-2.5 - Enter your password you created in step 1.10 when prompted      
+2.5 - Enter the password you created in step 1.10 when prompted      
 \
 2.6 - Congrats!  You are now logged into your server as a root user.  Now we need to set up a user account to manage this server because managing it as a root user is bad practice.   
 \
 2.7 - Create a new user account by typing:   
+\
 ```adduser <user-name>```   
-where ```<user-name>``` is any name you wish to create for the user   
+\
+Where ```<user-name>``` is any name you wish to create for the user.   
+\   
 Enter a new password for this user.  It is strongly recommended you use a different password than you created for your root user in step 1.10.   
+\
 If prompted for more info such as Name, etc, simply press enter for each prompt.   
 \
 ![alt text](https://user-images.githubusercontent.com/44101756/98741534-10c84d00-236a-11eb-90fe-4675346b93ce.png)   
@@ -84,27 +88,50 @@ If prompted for more info such as Name, etc, simply press enter for each prompt.
 2.8 - Grant the new user administrative privileges by typing:   
 ```usermod -aG sudo <user-name>```   
 \
-2.9 - * VERY IMPORTANT * - Initial setup of users is complete.  Please test your new user account BEFORE closing out the root user session.  To do this open a new terminal window/tab and login with the new user acocunt by typing:  
-\ 
+2.9 - * VERY IMPORTANT * Initial setup of users is complete.  Please test your new user account BEFORE closing out the root user session.  To do this open a new terminal window/tab and login with the new user acocunt by typing:   
 ``` ssh <new-user-name>@<your-droplet-ip-address>```   
 \
 Enter the user password when prompted.  Type yes for fingerprinting again if prompted.   
 \
 2.10 - Validate the new user acocunt was set up properly with admin privlidges by typing:   
-\
 ```sudo -v```   
 \
-It should promt for your password if the acocunt was set up correctly.  If this is the case you may close out of the terminal window running your root session that we logged into on step 2.3   
+It should promt for your password if the account was set up correctly.  If this is the case you may now close out of the terminal window running your root session that we logged into on step 2.3   
 \
-2.11 - We can now set up a firewall on our server.  Do this by folling the 4 steps under 'Create Firewalls' here: https://www.digitalocean.com/docs/networking/firewalls/quickstart/   
+2.11 - We can now set up a firewall on our server.  Do this by following the 4 steps listed under 'Create Firewalls' here: https://www.digitalocean.com/docs/networking/firewalls/quickstart/   
 \
 2.12 - Thats it! The hard part is done.  Now we will move on to using the scripts to finish up steps 3 and 4.   
 
+### Step 3 : Configuring Your Digital Ocean Server
+3.1 - We should be at the root of our server.  You can ensure that because no / or folder will be listed in your terminal prompt.  All it should list is our user name and the droplet name.   
+\
+![alt text](https://user-images.githubusercontent.com/44101756/98742793-440bdb80-236c-11eb-965a-c8593b51f9be.png)   
+\
+3.2 - Clone/install this repository of server scripts by typing the following then pressing enter:   
+```git clone https://github.com/Eric-Lingren/oanda_server_scripts.git```   
+\
+![alt text](https://user-images.githubusercontent.com/44101756/98743113-c0062380-236c-11eb-90ac-abc89f893553.png)   
+\
+3.3 - Change into the new folder that was created automatically by typing:   
+```cd oanda_server_scripts```   
+\
+![alt image](https://user-images.githubusercontent.com/44101756/98743286-03f92880-236d-11eb-94ca-0edec8636388.png)   
+\
+3.4 - Enable permissions on the server to run the downloaded scripts by typing:   
+```sudo chmod 755 botbuilder.sh serverbuilder.sh```   
+\
+3.5 - Now you may run the script to finish configuring and building our server with all the Python packages we need by typing:   
+```. serverbuilder.sh```   
+\
+This should take ~ 5 minutes to complete.   
+\
+3.6 - Thats is!  Our server is now configured and ready to start running the Robot Algorithms.
+
+### Step 4 : Creating and Configuring The Trading Bots
 
 
 
 
-sudo chmod 755 botbuilder.sh serverbuilder.sh
 
 Run Botbuilder: 
 git clone https://github.com/Eric-Lingren/oanda_server_scripts.git
