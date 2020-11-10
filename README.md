@@ -134,7 +134,7 @@ This should take ~ 5 minutes to complete.
 4.1 - You should still be inside the /oanda_server_scripts folder.  If for some reason you are not, please navigate back into that directory.   
 \
 4.2 - Now we can cofigure the bots.  Each bot will live in their own virtual environment on the server so we can manage them independently and to ensure they do not conflict with each other. You will need to perform the remaning steps listed in this guide for each bot you wish to run and for each pair you wish to run the bots on.  For this reason the setup is fully automated with our botbuilder.sh script file.   
-\
+
 * IMPORTANT * - In order for the botbuilder script to cork properly, we will need to designate a custom folder name for it to live in.  I like to have my folders adhere to the following naming convention:   
 \
 ```<instrument-strategy-name>```   
@@ -143,14 +143,15 @@ For Example:
 \
 ```eurusd-testStrategy```   
 \
-We will also need to state which bot we want to use.  If I have provided you access to one of my private alogos, you may use that url here.  Alternatively you many use the public sample bots which has 3 basic strategies in it here:   
-\
-```https://github.com/Eric-Lingren/oanda_v20_platform.git```
+We will also need to state which bot we want to use.  If I have provided you access to one of my private algos robots, you may use that url here.  Alternatively you many use the public sample bots which has 3 basic strategies in it here:   
+https://github.com/Eric-Lingren/oanda_v20_platform.git
 \
 4.3 - Ok, with that out of the way, lets build the bot environment.  Simply run the command:   
+\
 ```. botbuilder.sh <desired-folder-name> <desired-bot-repo>```
 \
-Dont forget to change the fileds to what you actually want!  For this example i will be running:   
+Dont forget to change the fields to what you actually want!  For this example I will be running:   
+\  
 ```. botbuilder.sh eurusd-testStrategy https://github.com/Eric-Lingren/oanda_v20_platform.git```   
 \
 4.4 - Thats it! You should have a success message and should have been automatically placed in the correct location to start your bot script up!   
