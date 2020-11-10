@@ -10,6 +10,7 @@ Step 3 is creating and configuring the robots
 
 ### Step 1 : Create Your Digital Ocean Server
 1.1 - Login to (or create) your Digital Ocean Account   
+![alt text](https://user-images.githubusercontent.com/44101756/98738155-82050180-2364-11eb-9391-dc2437c3aa7e.png)   
 1.2 - Create a new project   
 1.3 - Create a new droplet   
 
