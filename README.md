@@ -154,6 +154,7 @@ Dont forget to change the fields to what you actually want!  For this example I 
 \
 ```. botbuilder.sh eurusd-testStrategy https://github.com/Eric-Lingren/oanda_v20_platform.git```   
 \
+\
 4.4 - Thats it! You should have a success message and should have been automatically placed in the correct location to start your bot script up!   
 \
 ![alt image](https://user-images.githubusercontent.com/44101756/98745492-e9c14980-2370-11eb-844b-3368609e936c.png)   
