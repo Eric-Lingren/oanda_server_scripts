@@ -69,7 +69,7 @@ Step 4 is for creating and configuring the robots
 \
 ![alt text](https://user-images.githubusercontent.com/44101756/98741277-9bf51300-2369-11eb-9ae8-9065369cf51c.png)   
 \
-2.4 - Type ```yes``` and press enter if you are asked to allow finger printing     
+2.4 - Type ```yes``` and press enter if you are asked to allow fingerprinting     
 \
 2.5 - Enter the password you created in step 1.10 when prompted      
 \
@@ -98,7 +98,7 @@ Enter the user password when prompted.  Type yes for fingerprinting if prompted.
 2.10 - Validate the new user account was set up properly with admin privlidges by typing:   
 ```sudo -v```   
 \
-It should promt for your password if the account was set up correctly.  If this is the case you may now close out of the terminal window running your root session that we logged into on step 2.3   
+It should prompt for your password if the account was set up correctly.  If this is the case you may now close out of the terminal window running your root session that we logged into on step 2.3   
 \
 2.11 - We can now set up a firewall on our server.  Do this by following the 4 steps listed under 'Create Firewalls' here: https://www.digitalocean.com/docs/networking/firewalls/quickstart/   
 \
