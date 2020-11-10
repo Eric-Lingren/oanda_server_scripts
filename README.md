@@ -143,7 +143,7 @@ For Example:
 \
 ```eurusd-testStrategy```   
 \
-We will also need to state which bot we want to use.  If I have provided you access to one of my private algos robots, you may use that url here.  Alternatively you many use the public sample bots which has 3 basic strategies in it here:   
+We will also need to state which bot we want to use.  If I have provided you access to one of my private algos robots, you may use that url here.  Alternatively you may use the public sample bots which has 3 basic strategies in it here:   
 https://github.com/Eric-Lingren/oanda_v20_platform.git
 \
 \
@@ -156,7 +156,7 @@ Dont forget to change the fields to what you actually want!  For this example I 
 ```. botbuilder.sh eurusd-testStrategy https://github.com/Eric-Lingren/oanda_v20_platform.git```   
 \
 \
-4.4 - Thats it! You should have a success message and should have been automatically placed in the correct location to start your bot script up!   
+4.4 - Thats it! Once the script completes you should have a success message and should have been automatically placed in the correct location (the folder name you provided) to start your bot script up!   
 \
 ![alt image](https://user-images.githubusercontent.com/44101756/98745492-e9c14980-2370-11eb-844b-3368609e936c.png)   
 \
