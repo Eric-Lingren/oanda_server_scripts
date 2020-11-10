@@ -1,13 +1,13 @@
-# oanda_server_scripts
+# Oanda Server Scripts
 
-These server scripts are intended to speed up the development and deployment of my robotic trading algorithms on the digital ocean plaform.  There are some manual steps but much of the setup has been automated.  This is intended to work in conjunction with my robotic algos.  A sample algo is found here https://github.com/Eric-Lingren/oanda_v20_platform.git
+These server scripts are intended to speed up the development and deployment of my robotic trading algorithms on the Digital Ocean platform.  There are some manual steps but much of the setup has been automated with the scripts in this repo.  This is intended to work in conjunction with my robotic forex trading algos.  A sample algo is found here https://github.com/Eric-Lingren/oanda_v20_platform.git
 
 This guide will be broken into 4 steps.
 
-Step 1 is creating your Digital Ocean Server   
-Step 2 is creating users for your Digital Ocean Server   
-Step 3 is configuring your Digital Ocean Server   
-Step 4 is creating and configuring the robots   
+Step 1 is for creating your Digital Ocean Server   
+Step 2 is for creating users for your Digital Ocean Server   
+Step 3 is for configuring your Digital Ocean Server   
+Step 4 is for creating and configuring the robots   
 
 
 ### Step 1 : Create Your Digital Ocean Server
@@ -161,4 +161,4 @@ Dont forget to change the fields to what you actually want!  For this example I 
 \
 For detailed instructions of how to start the bot, please check the readme instructions in the github repo of the bot you chose to use.   
 \
-Plese contact me if you have quesitons or concerns with any of these setup steps.
+Plese contact me if you have questions or concerns with any of these setup steps.
