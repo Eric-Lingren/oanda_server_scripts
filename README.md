@@ -135,7 +135,7 @@ This should take ~ 5 minutes to complete.
 \
 4.2 - Now we can cofigure the bots.  Each bot will live in their own virtual environment on the server so we can manage them independently and to ensure they do not conflict with each other. You will need to perform the remaning steps listed in this guide for each bot you wish to run and for each pair you wish to run the bots on.  For this reason the setup is fully automated with our botbuilder.sh script file.   
 
-* IMPORTANT * - In order for the botbuilder script to cork properly, we will need to designate a custom folder name for it to live in.  I like to have my folders adhere to the following naming convention:   
+* IMPORTANT - In order for the botbuilder script to cork properly, we will need to designate a custom folder name for it to live in.  I like to have my folders adhere to the following naming convention:   
 \
 ```<instrument-strategyname>```   
 \
@@ -162,3 +162,12 @@ Dont forget to change the fields to what you actually want!  For this example I 
 For detailed instructions of how to start the bot, please check the readme instructions in the github repo of the bot you chose to use.   
 \
 Plese contact me if you have questions or concerns with any of these setup steps.
+\
+\
+\
+\
+_Trading foreign exchange carries a high level of risk, and may not be suitable for all investors. Past performance is not indicative of future results. Leverage can work against you as well as for you. Before deciding to invest in foreign exchange you should carefully consider your investment objectives, level of experience, and risk appetite. The possibility exists that you could sustain a loss of some or all of your initial investment and therefore you should not invest money that you cannot afford to lose. You should be aware of all the risks associated with foreign exchange trading, and seek advice from an independent financial advisor if you have any doubts._   
+\
+_I take no responsibility for any losses or gains you may incur from using my software. I also take no responsibility for any of your architecture, security, or server configuration._   
+\
+_This software is provided as is. No warranties or guarantees will be provided for its accuracy, completeness, reliablity, or security if used within your own environment._
