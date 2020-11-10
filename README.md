@@ -80,8 +80,8 @@ Step 4 is creating and configuring the robots
 ```adduser <user-name>```   
 \
 Where ```<user-name>``` is any name you wish to create for the user.   
-\   
-Enter a new password for this user.  It is strongly recommended you use a different password than you created for your root user in step 1.10.   
+\
+Enter a new password for this user.  It is strongly recommended you use a different password than you created for your root user in step 1.10   
 \
 If prompted for more info such as Name, etc, simply press enter for each prompt.   
 \
@@ -90,12 +90,12 @@ If prompted for more info such as Name, etc, simply press enter for each prompt.
 2.8 - Grant the new user administrative privileges by typing:   
 ```usermod -aG sudo <user-name>```   
 \
-2.9 - * VERY IMPORTANT * Initial setup of users is complete.  Please test your new user account BEFORE closing out the root user session.  To do this open a new terminal window/tab and login with the new user acocunt by typing:   
+2.9 - * VERY IMPORTANT * Initial setup of users is complete.  Please test your new user account BEFORE closing out the root user session.  To do this open a new terminal window/tab and login with the new user account by typing:   
 ``` ssh <new-user-name>@<your-droplet-ip-address>```   
 \
-Enter the user password when prompted.  Type yes for fingerprinting again if prompted.   
+Enter the user password when prompted.  Type yes for fingerprinting if prompted.   
 \
-2.10 - Validate the new user acocunt was set up properly with admin privlidges by typing:   
+2.10 - Validate the new user account was set up properly with admin privlidges by typing:   
 ```sudo -v```   
 \
 It should promt for your password if the account was set up correctly.  If this is the case you may now close out of the terminal window running your root session that we logged into on step 2.3   
@@ -105,7 +105,7 @@ It should promt for your password if the account was set up correctly.  If this 
 2.12 - Thats it! The hard part is done.  Now we will move on to using the scripts to finish up steps 3 and 4.   
 
 ### Step 3 : Configuring Your Digital Ocean Server
-3.1 - We should be at the root of our server.  You can ensure that because no / or folder will be listed in your terminal prompt.  All it should list is our user name and the droplet name.   
+3.1 - We should be at the root directory of our server.  You can ensure that because no forward slash or folder names will be listed in your terminal prompt.  All it should list is our user name and the droplet name.   
 \
 ![alt text](https://user-images.githubusercontent.com/44101756/98742793-440bdb80-236c-11eb-965a-c8593b51f9be.png)   
 \
@@ -131,12 +131,32 @@ This should take ~ 5 minutes to complete.
 
 ### Step 4 : Creating and Configuring The Trading Bots
 
-
-
-
-
-Run Botbuilder: 
-git clone https://github.com/Eric-Lingren/oanda_server_scripts.git
-cd oanda_server_scripts
-chmod 755 botbuilder.sh
-. botbuilder.sh testing https://github.com/Eric-Lingren/oanda_v20_platform.git
+4.1 - You should still be inside the /oanda_server_scripts folder.  If for some reason you are not, please navigate back into that directory.   
+\
+4.2 - Now we can cofigure the bots.  Each bot will live in their own virtual environment on the server so we can manage them independently and to ensure they do not conflict with each other. You will need to perform the remaning steps listed in this guide for each bot you wish to run and for each pair you wish to run the bots on.  For this reason the setup is fully automated with our botbuilder.sh script file.   
+\
+* IMPORTANT * - In order for the botbuilder script to cork properly, we will need to designate a custom folder name for it to live in.  I like to have my folders adhere to the following naming convention:   
+\
+```<instrument-strategy-name>```   
+\
+For Example:   
+\
+```eurusd-testStrategy```   
+\
+We will also need to state which bot we want to use.  If I have provided you access to one of my private alogos, you may use that url here.  Alternatively you many use the public sample bots which has 3 basic strategies in it here:   
+\
+```https://github.com/Eric-Lingren/oanda_v20_platform.git```
+\
+4.3 - Ok, with that out of the way, lets build the bot environment.  Simply run the command:   
+```. botbuilder.sh <desired-folder-name> <desired-bot-repo>```
+\
+Dont forget to change the fileds to what you actually want!  For this example i will be running:   
+```. botbuilder.sh eurusd-testStrategy https://github.com/Eric-Lingren/oanda_v20_platform.git```   
+\
+4.4 - Thats it! You should have a success message and should have been automatically placed in the correct location to start your bot script up!   
+\
+![alt image](https://user-images.githubusercontent.com/44101756/98745492-e9c14980-2370-11eb-844b-3368609e936c.png)   
+\
+For detailed instructions of how to start the bot, please check the readme instructions in the github repo of the bot you chose to use.
+\
+Plese contact me if you have quesitons or concerns with any of these setup steps.
