@@ -2,14 +2,16 @@
 
 These server scripts are intended to speed up the development and deployment of my robotic trading algorithms on the digital ocean plaform.  There are some manual steps but much of the setup has been automated.  This is intended to work in conjunction with my robotic algos.  A sample algo is found here https://github.com/Eric-Lingren/oanda_v20_platform.git
 
-This guide will be broken into 3 steps.
+This guide will be broken into 4 steps.
 
 Step 1 is creating your Digital Ocean Server   
-Step 2 is creating users for your Digital Ocean Server
+Step 2 is creating users for your Digital Ocean Server   
 Step 3 is configuring your Digital Ocean Server   
 Step 4 is creating and configuring the robots   
 
+
 ### Step 1 : Create Your Digital Ocean Server
+
 1.1 - Login to (or create) your Digital Ocean Account   
 \
 1.2 - Click '+ New Project' in the left navigation pane   
