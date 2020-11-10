@@ -1,6 +1,6 @@
 # oanda_server_scripts
 
-
+sudo chmod 755 botbuilder.sh serverbuilder.sh
 
 Run Botbuilder: 
 git clone https://github.com/Eric-Lingren/oanda_server_scripts.git
