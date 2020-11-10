@@ -51,9 +51,57 @@ Step 4 is creating and configuring the robots
 1.11 - Click 'Create Droplet'   
 \
 ![alt text](https://user-images.githubusercontent.com/44101756/98739890-63ecd080-2367-11eb-8515-11316f14d761.png)   
-\
 
-### Step 1 : Configuring User Accounts for Your Digital Ocean Server
+
+### Step 2 : Configuring User Accounts and Security for Your Digital Ocean Server
+2.1 - Copy the IP address of your newly created Droplet   
+\
+![alt text](https://user-images.githubusercontent.com/44101756/98740931-11141880-2369-11eb-92c3-3351da4978eb.png)   
+\
+2.2 - Open a Terminal or Command Prompt window   
+\
+![alt text](https://user-images.githubusercontent.com/44101756/98741030-3012aa80-2369-11eb-86ce-a2935c8497a2.png)   
+\
+2.3 - Type the following and add the correct IP address for your Droplet   
+```ssh root@<your-droplet-ip-address>```   
+\
+![alt text](https://user-images.githubusercontent.com/44101756/98741277-9bf51300-2369-11eb-9ae8-9065369cf51c.png)   
+\
+2.4 - Type ```yes``` and press enter if you are asked to allow finger printing     
+\
+2.5 - Enter your password you created in step 1.10 when prompted      
+\
+2.6 - Congrats!  You are now logged into your server as a root user.  Now we need to set up a user account to manage this server because managing it as a root user is bad practice.   
+\
+2.7 - Create a new user account by typing:   
+```adduser <user-name>```   
+where ```<user-name>``` is any name you wish to create for the user   
+Enter a new password for this user.  It is strongly recommended you use a different password than you created for your root user in step 1.10.   
+If prompted for more info such as Name, etc, simply press enter for each prompt.   
+\
+![alt text](https://user-images.githubusercontent.com/44101756/98741534-10c84d00-236a-11eb-90fe-4675346b93ce.png)   
+\
+2.8 - Grant the new user administrative privileges by typing:   
+```usermod -aG sudo <user-name>```   
+\
+2.9 - * VERY IMPORTANT * - Initial setup of users is complete.  Please test your new user account BEFORE closing out the root user session.  To do this open a new terminal window/tab and login with the new user acocunt by typing:  
+\ 
+``` ssh <new-user-name>@<your-droplet-ip-address>```   
+\
+Enter the user password when prompted.  Type yes for fingerprinting again if prompted.   
+\
+2.10 - Validate the new user acocunt was set up properly with admin privlidges by typing:   
+\
+```sudo -v```   
+\
+It should promt for your password if the acocunt was set up correctly.  If this is the case you may close out of the terminal window running your root session that we logged into on step 2.3   
+\
+2.11 - We can now set up a firewall on our server.  Do this by folling the 4 steps under 'Create Firewalls' here: https://www.digitalocean.com/docs/networking/firewalls/quickstart/   
+\
+2.12 - Thats it! The hard part is done.  Now we will move on to using the scripts to finish up steps 3 and 4.   
+
+
+
 
 
 sudo chmod 755 botbuilder.sh serverbuilder.sh
