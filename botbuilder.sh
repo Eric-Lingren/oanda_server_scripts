@@ -3,7 +3,7 @@
 PARENTDIR=$1
 BOTREPO=$2
 echo " "
-echo "-----  INITIALIZING SETUP SCRIPT  -----"
+echo "-----  INITIALIZING ROBOT ALGORITHM SETUP  -----"
 echo "Please Wait... "
 echo " "
 cd ../environments
@@ -21,3 +21,7 @@ pip install numpy
 pip install tulipy
 deactivate
 sudo git clone $BOTREPO
+echo " "
+echo "-----  ROBOT ALGORITHM SETUP COMPLETE  -----"
+echo "Please Start Your Engines! ...I meant robot :)"
+echo " "
