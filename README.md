@@ -137,7 +137,7 @@ This should take ~ 5 minutes to complete.
 
 * IMPORTANT * - In order for the botbuilder script to cork properly, we will need to designate a custom folder name for it to live in.  I like to have my folders adhere to the following naming convention:   
 \
-```<instrument-strategy-name>```   
+```<instrument-strategyname>```   
 \
 For Example:   
 \
@@ -148,16 +148,16 @@ https://github.com/Eric-Lingren/oanda_v20_platform.git
 \
 4.3 - Ok, with that out of the way, lets build the bot environment.  Simply run the command:   
 \
-```. botbuilder.sh <desired-folder-name> <desired-bot-repo>```
+```. botbuilder.sh <desired-folder-name> <desired-bot-repo>```   
 \
 Dont forget to change the fields to what you actually want!  For this example I will be running:   
-\  
+\
 ```. botbuilder.sh eurusd-testStrategy https://github.com/Eric-Lingren/oanda_v20_platform.git```   
 \
 4.4 - Thats it! You should have a success message and should have been automatically placed in the correct location to start your bot script up!   
 \
 ![alt image](https://user-images.githubusercontent.com/44101756/98745492-e9c14980-2370-11eb-844b-3368609e936c.png)   
 \
-For detailed instructions of how to start the bot, please check the readme instructions in the github repo of the bot you chose to use.
+For detailed instructions of how to start the bot, please check the readme instructions in the github repo of the bot you chose to use.   
 \
 Plese contact me if you have quesitons or concerns with any of these setup steps.
