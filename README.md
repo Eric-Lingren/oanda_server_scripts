@@ -98,7 +98,7 @@ If prompted for more info such as Name, etc, simply press enter for each prompt.
 Enter the user password when prompted.  Type yes for fingerprinting if prompted.   
 \
 If you were able to login that means our firewall is configured properly and our user account was created.   
-\ 
+\
 2.11 - Validate the new user account was set up properly with admin privileges by typing:   
 ```sudo -v```   
 \
