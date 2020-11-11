@@ -90,19 +90,21 @@ If prompted for more info such as Name, etc, simply press enter for each prompt.
 2.8 - Grant the new user administrative privileges by typing:   
 ```usermod -aG sudo <user-name>```   
 \
-2.9 - * VERY IMPORTANT * Initial setup of users is complete.  Please test your new user account BEFORE closing out the root user session.  To do this open a new terminal window/tab and login with the new user account by typing:   
+2.9 - We can now set up a firewall on our server.  Do this by following the 4 steps listed under 'Create Firewalls' here: https://www.digitalocean.com/docs/networking/firewalls/quickstart/    
+\
+2.10 - * VERY IMPORTANT * Initial setup of users and security is complete.  Please test your new user account BEFORE closing out the root user session.  This will help us know if the user or firewalls were configured incorrectly.  To do this open a new terminal window/tab and login with the new user account by typing:   
 ``` ssh <new-user-name>@<your-droplet-ip-address>```   
 \
 Enter the user password when prompted.  Type yes for fingerprinting if prompted.   
 \
-2.10 - Validate the new user account was set up properly with admin privlidges by typing:   
+If you were able to login that means our firewall is configured properly and our user account was created.   
+\ 
+2.11 - Validate the new user account was set up properly with admin privileges by typing:   
 ```sudo -v```   
 \
 It should prompt for your password if the account was set up correctly.  If this is the case you may now close out of the terminal window running your root session that we logged into on step 2.3   
 \
-2.11 - We can now set up a firewall on our server.  Do this by following the 4 steps listed under 'Create Firewalls' here: https://www.digitalocean.com/docs/networking/firewalls/quickstart/   
-\
-2.12 - Thats it! The hard part is done.  Now we will move on to using the scripts to finish up steps 3 and 4.   
+2.13 - Thats it! The hard part is done.  Now we will move on to using the scripts to finish up steps 3 and 4.   
 
 ### Step 3 : Configuring Your Digital Ocean Server
 3.1 - We should be at the root directory of our server.  You can ensure that because no forward slash or folder names will be listed in your terminal prompt.  All it should list is our user name and the droplet name.   
