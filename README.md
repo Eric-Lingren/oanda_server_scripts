@@ -135,7 +135,7 @@ This should take ~ 5 minutes to complete.
 
 4.1 - You should still be inside the /oanda_server_scripts folder.  If for some reason you are not, please navigate back into that directory.   
 \
-4.2 - Now we can cofigure the bots.  Each bot will live in their own virtual environment on the server so we can manage them independently and to ensure they do not conflict with each other. You will need to perform the remaning steps listed in this guide for each bot you wish to run and for each pair you wish to run the bots on.  For this reason the setup is fully automated with our botbuilder.sh script file.   
+4.2 - Now we can configure the bots.  Each bot will live in their own virtual environment on the server so we can manage them independently and to ensure they do not conflict with each other. You will need to perform the remaning steps listed in this guide for each bot you wish to run and for each pair you wish to run the bots on.  For this reason the setup is fully automated with our botbuilder.sh script file.   
 
 * IMPORTANT - In order for the botbuilder script to work properly, we will need to designate a custom folder name for it to live in.  I like to have my folders adhere to the following naming convention:   
 \
@@ -162,7 +162,7 @@ Dont forget to change the fields to what you actually want!  For this example I 
 \
 ![alt image](https://user-images.githubusercontent.com/44101756/98745492-e9c14980-2370-11eb-844b-3368609e936c.png)   
 \
-For detailed instructions of how to start the bot, please check the readme instructions in the github repo of the bot you chose to use.   
+For detailed instructions of how to start the bot, please check the readme file in the github repo of the bot you chose to use.   
 \
 Plese contact me if you have questions or concerns with any of these setup steps.
 \
