@@ -19,6 +19,7 @@ pip install requests
 pip install argparse
 pip install numpy
 pip install tulipy
+pip install psutil
 deactivate
 sudo git clone $BOTREPO
 echo " "
