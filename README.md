@@ -5,16 +5,16 @@ These server scripts are intended to speed up the development and deployment of 
 This repository contains several different scripts for ease of server and robot algo management.   
 \
 Creating Your Digital Ocean Server:    
-[View Readme Here](./readme_server_builder.md)   
+[View Readme Here](./readmes/readme_server_builder.md)   
 \
 Creating One Single Robot:   
-[View Readme Here](./readme_solo_bot_builder.md)   
+[View Readme Here](./readmes/readme_solo_bot_builder.md)   
 \
 Mass Creation of Many Robots:   
-[View Readme Here](./readme_mass_bot_builder.md)   
+[View Readme Here](./readmes/readme_mass_bot_builder.md)   
 \
 Mass Autostarting  of all Robots:   
-[View Readme Here](./readme_autostart_all_bots.md)   
+[View Readme Here](./readmes/readme_autostart_all_bots.md)   
 \
 \
 \
