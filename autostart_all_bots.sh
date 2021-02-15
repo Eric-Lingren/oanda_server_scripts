@@ -3,14 +3,14 @@
 my_custom_tab="          "
 OANDA_ACCOUNT_NUMBER=$1
 OANDA_TOKEN=$2
-OANDA_TOKEN=$3
+BOT_NAME=$3
 EMAIL_TO=$4
 GMAIL_SERVER_ACCOUNT=$5
 GMAIL_SERVER_PASSWORD=$6
 
 echo $OANDA_ACCOUNT_NUMBER
 echo $OANDA_TOKEN
-echo $OANDA_TOKEN
+echo $BOT_NAME
 
 cd ../environments
 # cd environments
