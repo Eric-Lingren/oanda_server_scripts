@@ -77,15 +77,18 @@ for i in ${!array[@]}; do
     echo "----------------------------------------------------------------------------------------"
     echo " "
 
-    echo "----------------------------------------------------------------------------------------"
-    echo " "
-    echo "STARTING BOT SCRIPT FOR: $parent_dir"
-    echo " "
-    echo "----------------------------------------------------------------------------------------"
-    echo " "
-    cd git_cloned_folder_name
-    nohup python3 main.py 
-    cd ../..
+    # echo "----------------------------------------------------------------------------------------"
+    # echo " "
+    # echo "STARTING BOT SCRIPT FOR: $parent_dir"
+    # echo " "
+    # echo "----------------------------------------------------------------------------------------"
+    # echo " "
+    # echo $git_cloned_folder_name
+    # pwd
+    # cd $git_cloned_folder_name
+    # nohup python3 main.py 
+    # cd ../..
+    cd ../
 done
 
 echo " "

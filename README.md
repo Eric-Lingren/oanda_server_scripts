@@ -179,3 +179,5 @@ _This software is provided as is. No warranties or guarantees will be provided f
 # Mass bot builder scrip execution example:
 
 . massbotbuilder.sh EUR_USD USD_CAD GPB_USD AUD_CAD AUD_CHF AUD_NZD AUD_USD CAD_CHF EUR_AUD rsi_test https://github.com/Eric-Lingren/oanda_v20_platform.git
+
+. massbotbuilder.sh EUR_USD USD_CAD rsi_test https://github.com/Eric-Lingren/oanda_v20_platform.git
