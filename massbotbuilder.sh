@@ -3,8 +3,7 @@
 # LAST ARGUMENT MUST BE THE REPO
 # 2ND TO LAS ARGUMENT MUST THE THE STRATGEY NAME
 # ALL OTHER PRECEDING ARGUMENTS MUST BE THE PAIRS (EUR_USD)
-
-!/bin/bash
+#!/bin/bash
 
 # SETS THE GIT REPO TO CLONE THAT WAS PASSED AS THE LAST ARGUMENT FROM THE COMMAND LINE
 oanda_platform_repo="${@: -1}"
@@ -24,7 +23,7 @@ echo " "
 cd ../environments
 
 for i in ${!array[@]}; do
-    parent_dir="${array[$i]}-$stratgey_name"
+    parent_dir="$stratgey_name-${array[$i]}"
     echo " "
     echo "----------------------------------------------------------------------------------------"
     echo " "
