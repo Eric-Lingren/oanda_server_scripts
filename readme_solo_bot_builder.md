@@ -11,19 +11,19 @@ This readme is the full instructions of how to use the solo_bot_builder.sh shell
 1.2 - Now we can configure a bot.  Each bot will live in their own virtual environment on the server so we can manage them independently and to ensure they do not conflict with each other. You will need to perform the remaning steps listed in this guide for each bot you wish to run and for each pair you wish to run the bots on.  For this reason the setup is fully automated with our solo_bot_builder.sh script file.   
 
 * IMPORTANT - In order for the botbuilder script to work properly, we will need to designate a custom folder name for it to live in.  I like to have my folders adhere to the following naming convention:   
-\
-```<strategyName-instrumentName>```   
-\
-For Example:   
-\
-```testStrategy-EUR_USD```   
-\
-If you are planning on using the autostart script contained within this repo it is very important that you adhere to this naming convention.  the strategey name must match the name of the algo within the platform you are running, and the currency pair must be in the exact format listed above since this is what the Oanda platform needs to identify what pair you want to un on.   
-\
-We will also need to state which bot we want to use.  If I have provided you access to one of my private algos robots, you may use that url here.  Alternatively you may use the public sample bots which has 3 basic strategies in it here:   
-https://github.com/Eric-Lingren/oanda_v20_platform.git
-\
-\
+
+    ```<strategyName-instrumentName>```   
+
+    For Example:   
+
+    ```testStrategy-EUR_USD```   
+
+    If you are planning on using the autostart script contained within this repo it is very important that you adhere to this naming convention.  the strategey name must match the name of the algo within the platform you are running, and the currency pair must be in the exact format listed above since this is what the Oanda platform needs to identify what pair you want to un on.   
+
+    We will also need to state which bot we want to use.  If I have provided you access to one of my private algos robots, you may use that url here.  Alternatively you may use the public sample bots which has 3 basic strategies in it here:   
+    https://github.com/Eric-Lingren/oanda_v20_platform.git   
+
+
 1.3 - Ok, with that out of the way, lets build the bot environment.  Simply run the command:   
 \
 ```. solo_bot_builder.sh <desired-folder-name> <desired-bot-repo>```   

@@ -22,9 +22,9 @@ For exmple, if I want to run this on 2 pairs I would use the command:
 And if I wanted to run this script to build 10 different bots simultaneously, I could run:   
 \
 ```. massbotbuilder.sh EUR_USD USD_CAD AUD_NZD USD_CHF GBP_USD AUD_USD USD_JPY EUR_GPB CAD_CHF EUR_CAD rsi_test https://github.com/Eric-Lingren/oanda_v20_platform.git```   
-\
+
 ## Next Steps:    
 Once your virtual enviroments are all set up with the correct robot algos, you need to turn them on.  You can do this manually but it is much more efficient to start them all up at the same time with the autostarts script contained within this repo.   
 \
-[Those Instructions Are Here](./readme_autostart_all_bots.md)   
+[Autostart Instructions Are Here](./readme_autostart_all_bots.md)   
 

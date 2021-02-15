@@ -123,7 +123,7 @@ It should prompt for your password if the account was set up correctly.  If this
 \
 3.4 - Enable permissions on the server to run the downloaded scripts by typing:   
 ```sudo chmod 755 botbuilder.sh server_builder.sh```   
-\   
+  
 3.4.1 - While we are at that, we should enable all sripts in this repo to have running permissions.  Do can do that by typing:   
 ```sudo chmod 755 botbuilder.sh server_builder.sh autostart_all_bots.sh mass_bot_builder.sh solo_bot_builder.sh```  
 \
@@ -133,14 +133,14 @@ It should prompt for your password if the account was set up correctly.  If this
 This should take ~ 5 minutes to complete.   
 \
 3.6 - Thats is!  Our server is now configured and ready to start running the Robot Algorithms.   
-\   
-\   
+   
+   
 ## Next Steps:
 \
 Now that we have a fully functional server, we can move onto one of the bot builder scripts.   
 \
 If you want to build and deploy a single robot alogo, you can use the solo bot builder option:   
-[View Instructions Here](./readme_solo_bot_builder.md)   
+[Solo Bot Builder Instructions Here](./readme_solo_bot_builder.md)   
 \
 If you want to build and deploy a many robots using the same algo but on different currencies, you can use the mass bot builder option:       
-[View Instructions Here](./readme_mass_bot_builder.md)  
+[Mass Bot Builder Instructions Here](./readme_mass_bot_builder.md)  
