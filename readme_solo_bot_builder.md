@@ -36,11 +36,9 @@ Dont forget to change the fields to what you actually want!  For this example I 
 1.4 - Thats it! Once the script completes you should have a success message and should have been automatically placed in the correct location (the folder name you provided) to start your bot script up!   
 \
 ![alt image](https://user-images.githubusercontent.com/44101756/98745492-e9c14980-2370-11eb-844b-3368609e936c.png)   
-\
 
 ## Next Steps:   
 For detailed instructions of how to start the bot, please check the readme file in the github repo of the bot you chose to use.   
 \
 Alternatively you can use the autostarts script contianed within this repo to turn on all robots on your server automtically.  
 [Those Instructions Are Here](./readme_autostart_all_bots.md)   
-\

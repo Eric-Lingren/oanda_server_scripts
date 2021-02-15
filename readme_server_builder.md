@@ -122,22 +122,24 @@ It should prompt for your password if the account was set up correctly.  If this
 ![alt image](https://user-images.githubusercontent.com/44101756/98743286-03f92880-236d-11eb-94ca-0edec8636388.png)   
 \
 3.4 - Enable permissions on the server to run the downloaded scripts by typing:   
-```sudo chmod 755 botbuilder.sh serverbuilder.sh```   
+```sudo chmod 755 botbuilder.sh server_builder.sh```   
+\   
+3.4.1 - While we are at that, we should enable all sripts in this repo to have running permissions.  Do can do that by typing:   
+```sudo chmod 755 botbuilder.sh server_builder.sh autostart_all_bots.sh mass_bot_builder.sh solo_bot_builder.sh```  
 \
 3.5 - Now you may run the script to finish configuring and building our server with all the Python packages we need by typing:   
-```. serverbuilder.sh```   
+```. server_builder.sh```   
 \
 This should take ~ 5 minutes to complete.   
 \
 3.6 - Thats is!  Our server is now configured and ready to start running the Robot Algorithms.   
-\
-\
-\
+\   
+\   
 ## Next Steps:
 \
 Now that we have a fully functional server, we can move onto one of the bot builder scripts.   
 \
-If you want to build and deploy a single robot alog, you can use the solo bot builder option:   
+If you want to build and deploy a single robot alogo, you can use the solo bot builder option:   
 [View Instructions Here](./readme_solo_bot_builder.md)   
 \
 If you want to build and deploy a many robots using the same algo but on different currencies, you can use the mass bot builder option:       

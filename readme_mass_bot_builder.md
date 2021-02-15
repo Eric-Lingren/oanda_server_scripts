@@ -1,6 +1,3 @@
-# Mass bot builder scrip execution example:
-
-. massbotbuilder.sh EUR_USD USD_CAD GPB_USD AUD_CAD AUD_CHF AUD_NZD AUD_USD CAD_CHF EUR_AUD USD_JPY rsi_test https://
 # Mass Bot Builder
 
 This readme is the full instructions of how to use the mass_bot_builder.sh shell script contained within this repo in order to get one robot algo up and running on as many currency pairs simultaneously as you wish.   
@@ -16,16 +13,15 @@ Running this script is very straight forward.  First make sure you are back in y
 \
 Next, Simply run this command with the correct varibles you want:
 
-```. mass_bot_builder.sh <currency-pairs-space-seperated> <repository-of-the-platform-and0-algo>```    
+```. mass_bot_builder.sh <currency-pairs-space-seperated> <repository-of-the-platform-and-algo>```    
 \
 For exmple, if I want to run this on 2 pairs I would use the command:   
 \
-```. mass_bot_builder.sh EUR_USD USD_CAD rsi_test https://github.com/Eric-Lingren/oanda_v20_platform.git```
+```. mass_bot_builder.sh EUR_USD USD_CAD rsi_test https://github.com/Eric-Lingren/oanda_v20_platform.git```   
 \
 And if I wanted to run this script to build 10 different bots simultaneously, I could run:   
 \
-```. massbotbuilder.sh EUR_USD USD_CAD AUD_NZD USD_CHF GBP_USD AUD_USD USD_JPY EUR_GPB CAD_CHF EUR_CAD rsi_test https://github.com/Eric-Lingren/oanda_v20_platform.git```
-\
+```. massbotbuilder.sh EUR_USD USD_CAD AUD_NZD USD_CHF GBP_USD AUD_USD USD_JPY EUR_GPB CAD_CHF EUR_CAD rsi_test https://github.com/Eric-Lingren/oanda_v20_platform.git```   
 \
 ## Next Steps:    
 Once your virtual enviroments are all set up with the correct robot algos, you need to turn them on.  You can do this manually but it is much more efficient to start them all up at the same time with the autostarts script contained within this repo.   
