@@ -24,7 +24,7 @@ for dir in ./*/; do
 
                     BOT_SCRIPT_EXECUTION_STRING=$(echo nohup python3 main.py --oanda_account $OANDA_ACCOUNT_NUMBER --oanda_token $OANDA_TOKEN --pair $CURRENCY_PAIR --bot $BOT_NAME --email_to $EMAIL_TO --gmail_server_account $GMAIL_SERVER_ACCOUNT --gmail_server_password $GMAIL_SERVER_PASSWORD &)
                     echo $BOT_SCRIPT_EXECUTION_STRING
-                    chmod u+x main.my
+                    chmod u+x main.py
                     $BOT_SCRIPT_EXECUTION_STRING
                     echo "-----------------------------------------------------------"
                     echo "|${my_custom_tab}THE FOLLWING ROBOT HAS BEEN STARTED:${my_custom_tab}|"
@@ -37,5 +37,5 @@ for dir in ./*/; do
     ); 
     done
 
-cd ..
-echo " "
+# cd ..
+# echo " "
