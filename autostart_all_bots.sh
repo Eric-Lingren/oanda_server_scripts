@@ -26,7 +26,7 @@ for dir in ./*/; do
                     FOLDER_NAME=$(echo $dir | cut -d'/' -f 2)
                     CURRENCY_PAIR=$(echo $FOLDER_NAME | cut -d'-' -f 2)
 
-                    BOT_SCRIPT_EXECUTION_STRING=$(echo nohup python3 main.py --oanda_account $OANDA_ACCOUNT_NUMBER --oanda_token $OANDA_TOKEN --pair $CURRENCY_PAIR --bot $BOT_NAME --email_to $EMAIL_TO --gmail_server_account $GMAIL_SERVER_ACCOUNT --gmail_server_password $GMAIL_SERVER_PASSWORD  </dev/null &>/dev/null &)
+                    BOT_SCRIPT_EXECUTION_STRING=$(echo nohup python3 main.py --oanda_account $OANDA_ACCOUNT_NUMBER --oanda_token $OANDA_TOKEN --pair $CURRENCY_PAIR --bot $BOT_NAME --email_to $EMAIL_TO --gmail_server_account $GMAIL_SERVER_ACCOUNT --gmail_server_password $GMAIL_SERVER_PASSWORD '<'/dev/null '&>'/dev/null &)
                     # echo -ne '\n'
                     echo $BOT_SCRIPT_EXECUTION_STRING
                     sudo chmod u+x main.py
