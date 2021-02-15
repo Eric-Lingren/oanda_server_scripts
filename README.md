@@ -174,3 +174,8 @@ _Trading foreign exchange carries a high level of risk, and may not be suitable 
 _I take no responsibility for any losses or gains you may incur from using my software. I also take no responsibility for any architecture, security, or server configurations._   
 \
 _This software is provided as is. No warranties or guarantees will be provided for its accuracy, completeness, reliablity, or security if used within your own environment._
+
+
+# Mass bot builder scrip execution example:
+
+. massbotbuilder.sh EUR_USD USD_CAD GPB_USD AUD_CAD AUD_CHF AUD_NZD AUD_USD CAD_CHF EUR_AUD rsi_test https://github.com/Eric-Lingren/oanda_v20_platform.git
