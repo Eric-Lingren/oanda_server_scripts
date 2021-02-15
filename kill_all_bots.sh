@@ -1,3 +1,6 @@
+#  THIS SCRIPT IS NON FUNCTIONAL.  PLEASE DO NOT USE.
+
+
 #!/bin/bash
 
 USER=$1
