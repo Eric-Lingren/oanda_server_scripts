@@ -1,7 +1,7 @@
 # Oanda Server Scripts
 
 These server scripts are intended to speed up the development and deployment of my robotic trading algorithms on the Digital Ocean platform.  There are some manual steps but much of the setup has been automated with the scripts in this repo.  This is intended to work in conjunction with my robotic forex trading algos.   
-\ 
+\
 [A Public Sample Agos is Found Here](https://github.com/Eric-Lingren/oanda_v20_platform.git)       
 \
 This repository contains several different scripts for ease of server and robot algo management.   
