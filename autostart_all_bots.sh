@@ -8,6 +8,10 @@ EMAIL_TO=$4
 GMAIL_SERVER_ACCOUNT=$5
 GMAIL_SERVER_PASSWORD=$6
 
+echo $OANDA_ACCOUNT_NUMBER
+echo $OANDA_TOKEN
+echo $OANDA_TOKEN
+
 cd ../environments
 # cd environments
 
