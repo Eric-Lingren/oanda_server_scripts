@@ -27,11 +27,13 @@ for dir in ./*/; do
                     CURRENCY_PAIR=$(echo $FOLDER_NAME | cut -d'-' -f 2)
 
                     # BOT_SCRIPT_EXECUTION_STRING=$(echo nohup python3 main.py --oanda_account $OANDA_ACCOUNT_NUMBER --oanda_token $OANDA_TOKEN --pair $CURRENCY_PAIR --bot $BOT_NAME --email_to $EMAIL_TO --gmail_server_account $GMAIL_SERVER_ACCOUNT --gmail_server_password $GMAIL_SERVER_PASSWORD &)
-                    BOT_SCRIPT_EXECUTION_STRING=$(echo nohup ( python3 main.py --oanda_account $OANDA_ACCOUNT_NUMBER --oanda_token $OANDA_TOKEN --pair $CURRENCY_PAIR --bot $BOT_NAME --email_to $EMAIL_TO --gmail_server_account $GMAIL_SERVER_ACCOUNT --gmail_server_password $GMAIL_SERVER_PASSWORD &) </dev/null &>/dev/null &)
-                    # echo -ne '\n'
+                    BOT_SCRIPT_EXECUTION_STRING=$(echo nohup python3 main.py --oanda_account $OANDA_ACCOUNT_NUMBER --oanda_token $OANDA_TOKEN --pair $CURRENCY_PAIR --bot $BOT_NAME --email_to $EMAIL_TO --gmail_server_account $GMAIL_SERVER_ACCOUNT --gmail_server_password $GMAIL_SERVER_PASSWORD </dev/null &>/dev/null &)
+                    echo " "
                     echo $BOT_SCRIPT_EXECUTION_STRING
+                    echo " "
                     sudo chmod u+x main.py
-                    $BOT_SCRIPT_EXECUTION_STRING
+                    nohup python3 main.py --oanda_account $OANDA_ACCOUNT_NUMBER --oanda_token $OANDA_TOKEN --pair $CURRENCY_PAIR --bot $BOT_NAME --email_to $EMAIL_TO --gmail_server_account $GMAIL_SERVER_ACCOUNT --gmail_server_password $GMAIL_SERVER_PASSWORD </dev/null &>/dev/null &
+                    # $BOT_SCRIPT_EXECUTION_STRING
                     echo "-----------------------------------------------------------"
                     echo "|${my_custom_tab}THE FOLLWING ROBOT HAS BEEN STARTED:${my_custom_tab}|"
                     echo "${my_custom_tab}${my_custom_tab} $FOLDER_NAME ${my_custom_tab}${my_custom_tab}"
