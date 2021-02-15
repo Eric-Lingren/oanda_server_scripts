@@ -62,8 +62,8 @@ for i in ${!array[@]}; do
     echo " "
     echo "----------------------------------------------------------------------------------------"
     echo " "
-    git clone $oanda_platform_repo
-    # sudo git clone $oanda_platform_repo
+    # git clone $oanda_platform_repo    # Used for localhost
+    sudo git clone $oanda_platform_repo # Used for DigitalOcean
     
     echo "----------------------------------------------------------------------------------------"
     echo " "
