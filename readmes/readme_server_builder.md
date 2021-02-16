@@ -5,11 +5,6 @@ This readme is the full instruction of how to create a new Python Digital Ocean 
 This portion of the repo does require some manual process and is not fully automated, but it will get you from 0 to functional server.   
 
 
- 2 is for creating users for your Digital Ocean Server   
- 3 is for configuring your Digital Ocean Server   
- 4 is for creating and configuring the robots   
-
-
 ### Step 1 : Create Your Digital Ocean Server
 
 1.1 - Login to (or create) your Digital Ocean Account   
