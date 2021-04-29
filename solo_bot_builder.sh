@@ -21,7 +21,7 @@ pip install numpy
 pip install tulipy
 pip install psutil
 deactivate
-sudo git clone $BOTREPO
+git clone $BOTREPO
 echo " "
 echo "-----  ROBOT ALGORITHM SETUP COMPLETE  -----"
 echo "Please Start Your Engines! ...I meant robot :)"
