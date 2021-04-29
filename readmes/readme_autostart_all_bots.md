@@ -6,7 +6,7 @@ You can run this script like this, changing out the varibles for the ones that m
 \
 ```. autostart_all_bots.sh <oanda-account-number> <oanda-api-token> <robot-algo-name> <notifications-receiver-email-address> <your-gmail-server-username> <your-gmail-server-app-password>```   
 \
-Notifications are send via a secure ssh connection within the robot from a gmail account of your choosing, so you will need to set that up before this script (or any of your bots) will work.  This will configure the email sending to you each time the bot comes online or goes offline for management reasons.   
+Emailnotifications are sent via a secure ssh connection within the robot from a gmail account of your choosing, so you will need to set that up before this script (or any of your bots) will work.  This will configure the email sending to you each time the bot comes online or goes offline for management reasons.   
 \
 Thats it! Every bot contained on this server will autostart when this script runs.   
 
