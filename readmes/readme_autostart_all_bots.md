@@ -15,7 +15,7 @@ You can check that the processes are all running by searching all robot python s
 ### Check Running processes:
 ```ps -ef | egrep "python|PID"```   
 \
-Additionally, if you need to kill one of the robots, you can do that with the corresponding proccess id that was output from the precios command:    
+Additionally, if you need to kill one of the robots, you can do that with the corresponding proccess id that was output from the previous command:    
 
 ### Kill Running Processes:   
 ```kill -9 <pid>```
