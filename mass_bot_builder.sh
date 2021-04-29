@@ -17,7 +17,6 @@ array=(${@:1:$pairs_length})
 
 # SETS THE STRING VALUE OF THE SOON TO BE CLONED GIT FOLDER NAME FOR ACCESS AND AUTO SCRIPT STARTING LATER
 git_repo_name=$(echo $oanda_platform_repo | cut -d'/' -f 5)
-git_cloned_folder_name=${git_repo_name%.git}
 
 echo " "
 echo "----------  INITIALIZING ROBOT ALGORITHM SETUP  ----------"
@@ -67,8 +66,8 @@ for i in ${!array[@]}; do
     echo " "
     echo "----------------------------------------------------------------------------------------"
     echo " "
-    # git clone $oanda_platform_repo    # Used for localhost
-    sudo git clone $oanda_platform_repo # Used for DigitalOcean
+    
+    git clone $oanda_platform_repo 
     
     echo "----------------------------------------------------------------------------------------"
     echo " "
@@ -76,18 +75,6 @@ for i in ${!array[@]}; do
     echo " "
     echo "----------------------------------------------------------------------------------------"
     echo " "
-
-    # echo "----------------------------------------------------------------------------------------"
-    # echo " "
-    # echo "STARTING BOT SCRIPT FOR: $parent_dir"
-    # echo " "
-    # echo "----------------------------------------------------------------------------------------"
-    # echo " "
-    # echo $git_cloned_folder_name
-    # pwd
-    # cd $git_cloned_folder_name
-    # nohup python3 main.py 
-    # cd ../..
     cd ../
 done
 
