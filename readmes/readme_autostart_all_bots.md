@@ -1,6 +1,6 @@
 # Autostart All Bots  
 
-The autostarts script is a recursive bash script that will crawl through all folders contained within you environemnts folder on your server, find the correct robot algo python scripts and start them up with the paramaters you input.  The bots will all be started with a nohup linux process so they can contiinue to run even after the script is completed or you exit out of your terminal ssh session.   
+The autostarts script is a recursive bash script that will crawl through all folders contained within your environments folder on your server, find the correct robot algo python scripts and start them up with the paramaters you input.  The bots will all be started with a nohup linux process so they can contiinue to run even after the script is completed or you exit out of your terminal ssh session.   
 \
 You can run this script like this, changing out the varibles for the ones that match your needs:   
 \
