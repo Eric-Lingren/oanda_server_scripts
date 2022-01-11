@@ -19,7 +19,7 @@ Mass Autostarting  of all Robots:
 [View Readme Here](./readmes/readme_autostart_all_bots.md)   
 \
 \
-Video Usage Walkthrough:
+Video Usage Walkthrough:    
 [View Walkthrough Here](https://drive.google.com/file/d/1HrapZaoP7-ioQxTQbIIxT_pV2xirI2mW/view)  
 \
 \
