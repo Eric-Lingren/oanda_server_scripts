@@ -19,6 +19,9 @@ Mass Autostarting  of all Robots:
 [View Readme Here](./readmes/readme_autostart_all_bots.md)   
 \
 \
+[View Walkthrough Here](https://drive.google.com/file/d/1HrapZaoP7-ioQxTQbIIxT_pV2xirI2mW/view)  
+\
+\
 Plese contact me if you have questions or concerns with any of these setup steps.
 \
 \
